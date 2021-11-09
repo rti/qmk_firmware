@@ -19,6 +19,7 @@ enum custom_keycodes {
 
 // Shortcut to make keymap more readable
 #define SYM_L   MO(_SYMB)
+#define ADJ_L   MO(_ADJUST)
 
 #define KC_CTES LCTL_T(KC_ESC)
 #define KC_CTQU RCTL_T(KC_QUOT)
@@ -26,8 +27,8 @@ enum custom_keycodes {
 #define KC_NAGR LT(_NAV, KC_GRV)
 #define KC_NAMI LT(_NAV, KC_MINS)
 
-#define KC_ADEN LT(_ADJUST, KC_END)
-#define KC_ADPU LT(_ADJUST, KC_PGUP)
+/* #define KC_ADEN LT(_ADJUST, KC_END) */
+/* #define KC_ADPU LT(_ADJUST, KC_PGUP) */
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -39,10 +40,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * | Tab  |   Q  |   W  |   E  |   R  |   T  |  SYM  |                    |  SYM  |   Y  |   U  |   I  |   O  |   P  |  \   |
    * |------+------+------+------+------+------|-------.                    ,-------|------+------+------+------+------+------|
    * |CtlEsc|   A  |   S  |   D  |   F  |   G  |       |                    |       |   H  |   J  |   K  |   L  |   ;  | Ctl' |
-   * |------+------+------+------+------+------|   [   |                    |   ]   |------+------+------+------+------+------|
+   * |------+------+------+------+------+------|  [ {  |                    |  } ]  |------+------+------+------+------+------|
    * | Sh ( |   Z  |   X  |   C  |   V  |   B  '----------------,  ,----------------'   N  |   M  |   ,  |   .  |   /  | Sh ) |
-   * |-----------------------------------------/ADJ PUP/ PDOWN /    \ HOME  \ ADJEND\-----------------------------------------|
-   * |      |      |      |      |    /  Mod  /-------/-------/      \-------\-------\  Alt  \    |      |      |      |      |
+   * |-----------------------------------------/  ADJ  /       /    \       \  ADJ  \-----------------------------------------|
+   * |      |      |      |      |    /  Mod  /-------/-------/      \-------\-------\  Alt  \    | HOME | PGDN | PGUP | END  |
    * |      |      |      |      |   /       /  BSPC / DEL   /        \ Enter \ Space \       \   |      |      |      |      |
    * `---------------------------'  '-------/       /       /          \       \       \-------'  '---------------------------'
    *                                        '--------------'            '--------------'
@@ -54,9 +55,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┤                         ├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
      KC_CTES ,KC_A    ,KC_S    ,KC_D    ,KC_F    ,KC_G    ,KC_LBRC ,                          KC_RBRC ,KC_H    ,KC_J    ,KC_K    ,KC_L    ,KC_SCLN ,KC_CTQU ,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┐       ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,KC_ADPU ,KC_PGDN ,        KC_HOME ,KC_ADEN ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
+     KC_LSPO ,KC_Z    ,KC_X    ,KC_C    ,KC_V    ,KC_B    ,ADJ_L   ,XXXXXXX ,        XXXXXXX ,ADJ_L   ,KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,KC_RSPC ,
   //├────────┼────────┼────────┼────────┼────┬───┴────┬───┼────────┼────────┤       ├────────┼────────┼───┬────┴───┬────┼────────┼────────┼────────┼────────┤
-     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_LGUI ,    KC_BSPC ,KC_DEL  ,        KC_ENT  ,KC_SPC  ,    KC_RALT ,     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX
+     XXXXXXX ,XXXXXXX ,XXXXXXX ,XXXXXXX ,     KC_LGUI ,    KC_BSPC ,KC_DEL  ,        KC_ENT  ,KC_SPC  ,    KC_RALT ,     KC_HOME ,KC_PGDN ,KC_PGUP ,KC_END
   //└────────┴────────┴────────┴────────┘    └────────┘   └────────┴────────┘       └────────┴────────┘   └────────┘    └────────┴────────┴────────┴────────┘
   ),
 
