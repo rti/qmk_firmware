@@ -19,6 +19,7 @@ enum custom_keycodes {
 #define EXT_L   MO(_EXTRA)
 #define ADJ_L   MO(_ADJUST)
 
+#define KC_ALBS LALT_T(KC_BSPC)
 #define KC_CTES LCTL_T(KC_ESC)
 #define KC_CTQU RCTL_T(KC_QUOT)
 #define KC_GUSP LGUI_T(KC_SPC)
@@ -38,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *|-------+-------+-------+-------+-------+-------|  [ {  |                     |  } ]  |-------+-------+-------+-------+-------+-------|
    *| Sh (  |   Z   |   X   |   C   |   V   |   B   |---------------,      ,--------------|   N   |   M   |  , <  |  . >  |  / ?  | Sh )  |
    *|----------------------------------------------/  EXT  / ADJ   /       \  ADJ  \  EXT  \----------------------------------------------|
-   *| HYPER |  MEH  |       |       |     /  Alt  /-------/-------/         \-------\-------\  Alt  \     | HOME  | PGDN  | PGUP  | END   |
-   *|       |       |       |       |    /       / SPACE /       /           \       \ ENTER \       \    |       |       |       |       |
+   *| HYPER |  MEH  |       |       |     / BSPC  /-------/-------/         \-------\-------\  Alt  \     | HOME  | PGDN  | PGUP  | END   |
+   *|       |       |       |       |    / Alt   / SPACE /       /           \       \ ENTER \       \    |       |       |       |       |
    *`-------------------------------'   '-------/  GUI  / CTRL  /             \ CTRL  \  GUI  \-------'   '-------------------------------'
    *                                            '--------------'               '--------------'
    */
@@ -53,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┐     ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤
      KC_LSPO,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,EXT_L  ,ADJ_L  ,      ADJ_L  ,EXT_L  ,KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSPC,
   //├───────┼───────┼───────┼───────┼────┬──┴────┬──┼───────┼───────┤     ├───────┼───────┼──┬────┴──┬────┼───────┼───────┼───────┼───────┤
-     KC_HYPR,KC_MEH ,XXXXXXX,XXXXXXX,     KC_LALT,   KC_GUSP,KC_LCTL,      KC_RCTL,KC_GUEN,   KC_RALT,     KC_HOME,KC_PGDN,KC_PGUP,KC_END
+     KC_HYPR,KC_MEH ,XXXXXXX,XXXXXXX,     KC_ALBS,   KC_GUSP,KC_LCTL,      KC_RCTL,KC_GUEN,   KC_RALT,     KC_HOME,KC_PGDN,KC_PGUP,KC_END
   //└───────┴───────┴───────┴───────┘    └───────┘  └───────┴───────┘     └───────┴───────┘  └───────┘    └───────┴───────┴───────┴───────┘
   ),
 
