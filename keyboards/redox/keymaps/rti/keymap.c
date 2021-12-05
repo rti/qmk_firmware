@@ -28,8 +28,8 @@ enum custom_keycodes {
 #define KC_CTTA LCTL_T(KC_TAB)
 #define KC_GUSP LGUI_T(KC_SPC)
 #define KC_GUEN RGUI_T(KC_ENT)
-#define KC_BR2D HYPR(KC_LBRC)
-#define KC_BR2U HYPR(KC_RBRC)
+#define KC_BR2D HYPR(KC_9)
+#define KC_BR2U HYPR(KC_0)
 
 enum unicode_names {
     ESSZETT,
