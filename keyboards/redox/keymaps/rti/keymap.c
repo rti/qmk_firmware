@@ -176,13 +176,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_ADJUST] = LAYOUT(
   //┌───────┬───────┬───────┬───────┬───────┬───────┐                                     ┌───────┬───────┬───────┬───────┬───────┬───────┐
-     XXXXXXX,KC_MUTE,KC_VOLD,KC_VOLU,RGB_TOG,RGB_MOD,                                      KC_PSLS,KC_P7  ,KC_P8  ,KC_P9  ,KC_PMNS,KC_PSCR,
+     XXXXXXX,KC_MUTE,KC_VOLD,KC_VOLU,RGB_TOG,RGB_MOD,                                      KC_SLSH,KC_7   ,KC_8   ,KC_9   ,KC_MINS,KC_PSCR,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┐                     ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     XXXXXXX,XXXXXXX,KC_BRID,KC_BRIU,RGB_SAD,RGB_SAI,XXXXXXX,                      XXXXXXX,KC_PAST,KC_P4  ,KC_P5  ,KC_P6  ,KC_PPLS,XXXXXXX,
+     XXXXXXX,XXXXXXX,KC_BRID,KC_BRIU,RGB_SAD,RGB_SAI,XXXXXXX,                      XXXXXXX,KC_ASTR,KC_4   ,KC_5   ,KC_6   ,KC_PLUS,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┤                     ├───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     _______,XXXXXXX,KC_BR2D,KC_BR2U,RGB_HUD,RGB_HUI,XXXXXXX,                      XXXXXXX,KC_PCMM,KC_P1  ,KC_P2  ,KC_P3  ,KC_PEQL,_______,
+     _______,XXXXXXX,KC_BR2D,KC_BR2U,RGB_HUD,RGB_HUI,XXXXXXX,                      XXXXXXX,KC_COMM,KC_1   ,KC_2   ,KC_3   ,KC_EQL ,_______,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┐     ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     _______,XXXXXXX,XXXXXXX,XXXXXXX,RGB_VAD,RGB_VAI,XXXXXXX,_______,      _______,XXXXXXX,XXXXXXX,XXXXXXX,KC_P0  ,KC_PDOT,KC_PENT,_______,
+     _______,XXXXXXX,XXXXXXX,XXXXXXX,RGB_VAD,RGB_VAI,XXXXXXX,_______,      _______,XXXXXXX,XXXXXXX,XXXXXXX,KC_0   ,KC_DOT ,KC_ENT ,_______,
   //├───────┼───────┼───────┼───────┼────┬──┴────┬──┼───────┼───────┤     ├───────┼───────┼──┬────┴──┬────┼───────┼───────┼───────┼───────┤
      _______,_______,XXXXXXX,_______,     _______,   _______,_______,      _______,_______,   _______,     _______,XXXXXXX,_______,_______
   //└───────┴───────┴───────┴───────┘    └───────┘  └───────┴───────┘     └───────┴───────┘  └───────┘    └───────┴───────┴───────┴───────┘
