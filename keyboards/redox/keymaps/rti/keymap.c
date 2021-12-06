@@ -23,7 +23,8 @@ enum custom_keycodes {
 #define ADJ_L   MO(_ADJUST)
 
 #define KC_ALBS LALT_T(KC_BSPC)
-#define KC_CTES LCTL_T(KC_ESC)
+#define KC_CLES LCTL_T(KC_ESC)
+#define KC_CRES LCTL_T(KC_ESC)
 #define KC_CTQU RCTL_T(KC_QUOT)
 #define KC_CTTA LCTL_T(KC_TAB)
 #define KC_GUSP LGUI_T(KC_SPC)
@@ -84,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *| Sh (  |   Z   |   X   |   C   |   V   |   B   |---------------,      ,--------------|   N   |   M   |  , <  |  . >  |  / ?  | Sh )  |
    *|----------------------------------------------/  EXT  / ADJ   /       \  ADJ  \  EXT  \----------------------------------------------|
    *| HYPER |  MEH  |  UML  |       |     / BSPC  /-------/-------/         \-------\-------\  Alt  \     |       |  UML  | MEH   | HYPER |
-   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \       \ ENTER \       \    |       |       |       |       |
+   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \  ESC  \ ENTER \       \    |       |       |       |       |
    *`-------------------------------'   '-------/  GUI  / CTRL  /             \ CTRL  \  GUI  \-------'   '-------------------------------'
    *                                            '--------------'               '--------------'
    * EXTRA
@@ -98,7 +99,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *| Sh (  | UNDO  |  CUT  | COPY  | PASTE |       |---------------,      ,--------------|       |       |       |       |       | Sh )  |
    *|----------------------------------------------/  EXT  /       /       \       \  EXT  \----------------------------------------------|
    *| HYPER |  MEH  |       |       |     / BSPC  /-------/-------/         \-------\-------\  Alt  \     |       |       |  MEH  | HYPER |
-   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \       \ ENTER \       \    |       |       |       |       |
+   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \  ESC  \ ENTER \       \    |       |       |       |       |
    *`-------------------------------'   '-------/  GUI  / CTRL  /             \ CTRL  \  GUI  \-------'   '-------------------------------'
    *                                            '--------------'               '--------------'
    * ADJUST
@@ -112,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *| Sh (  |       |       |       |RGB VAD|RGB VAI|---------------,      ,--------------|       |       |   0   |   .   | ENTER | Sh )  |
    *|----------------------------------------------/       / ADJ   /       \  ADJ  \       \----------------------------------------------|
    *| HYPER |  MEH  |       |       |     / BSPC  /-------/-------/         \-------\-------\  Alt  \     |       |       |  MEH  | HYPER |
-   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \       \ ENTER \       \    |       |       |       |       |
+   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \  ESC  \ ENTER \       \    |       |       |       |       |
    *`-------------------------------'   '-------/  GUI  / CTRL  /             \ CTRL  \  GUI  \-------'   '-------------------------------'
    *                                            '--------------'               '--------------'
    * UML
@@ -126,7 +127,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    *| SHIFT |       |       |   ©   |       |       |---------------,      ,--------------|   Ñ   |       |       |       |       | SHIFT |
    *|----------------------------------------------/       /       /       \       \       \----------------------------------------------|
    *| HYPER |  MEH  |  UML  |       |     / BSPC  /-------/-------/         \-------\-------\  Alt  \     |       |  UML  |  MEH  | HYPER |
-   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \       \ ENTER \       \    |       |       |       |       |
+   *|       |       |       |       |    / Alt   / SPACE / TAB   /           \  ESC  \ ENTER \       \    |       |       |       |       |
    *`-------------------------------'   '-------/  GUI  / CTRL  /             \ CTRL  \  GUI  \-------'   '-------------------------------'
    *                                            '--------------'               '--------------'
    */
@@ -137,11 +138,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┐                     ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┤
      KC_TAB ,KC_Q   ,KC_W   ,KC_E   ,KC_R   ,KC_T   ,XXXXXXX,                      XXXXXXX,KC_Y   ,KC_U   ,KC_I   ,KC_O   ,KC_P   ,KC_BSLS,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┤                     ├───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     KC_CTES,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,KC_LBRC,                      KC_RBRC,KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_CTQU,
+     KC_CLES,KC_A   ,KC_S   ,KC_D   ,KC_F   ,KC_G   ,KC_LBRC,                      KC_RBRC,KC_H   ,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,KC_CTQU,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┐     ┌───────┼───────┼───────┼───────┼───────┼───────┼───────┼───────┤
      KC_LSPO,KC_Z   ,KC_X   ,KC_C   ,KC_V   ,KC_B   ,EXT_L  ,ADJ_L  ,      ADJ_L  ,EXT_L  ,KC_N   ,KC_M   ,KC_COMM,KC_DOT ,KC_SLSH,KC_RSPC,
   //├───────┼───────┼───────┼───────┼────┬──┴────┬──┼───────┼───────┤     ├───────┼───────┼──┬────┴──┬────┼───────┼───────┼───────┼───────┤
-     KC_HYPR,KC_MEH ,UML_L  ,XXXXXXX,     KC_ALBS,   KC_GUSP,KC_CTTA,      KC_RCTL,KC_GUEN,   KC_RALT,     XXXXXXX,UML_L  ,KC_MEH ,KC_HYPR
+     KC_HYPR,KC_MEH ,UML_L  ,XXXXXXX,     KC_ALBS,   KC_GUSP,KC_CTTA,      KC_CRES,KC_GUEN,   KC_RALT,     XXXXXXX,UML_L  ,KC_MEH ,KC_HYPR
   //└───────┴───────┴───────┴───────┘    └───────┘  └───────┴───────┘     └───────┴───────┘  └───────┘    └───────┴───────┴───────┴───────┘
   ),
 
