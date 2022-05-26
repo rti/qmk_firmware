@@ -46,7 +46,7 @@ enum layers {
 
 
 #define KC_SNSR RSFT_T(KC_SCLN)
-#define KC_PSSR RSFT_T(KC_PSCR)
+/* #define KC_PSSR RSFT_T(KC_PSCR) */
 #define KC_L_AL LALT_T(KC_L)
 #define KC_RGAL LALT_T(KC_RGHT)
 #define KC_K_GR RGUI_T(KC_K)
@@ -77,7 +77,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌───────┬───────┬───────┬───────┬───────┬───────┐                                     ┌───────┬───────┬───────┬───────┬───────┬───────┐
      XXXXXXX,KC_1   ,KC_2   ,KC_3   ,KC_4   ,KC_5   ,                                      KC_6   ,KC_7   ,KC_8   ,KC_9   ,KC_0   ,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┤                                     ├───────┼───────┼───────┼───────┼───────┼───────┤
-     XXXXXXX,KC_EQSL,KC_MIAL,KC_BSGL,KC_QUCL,KC_GRV ,                                      KC_LEFT,KC_DOCR,KC_UPGR,KC_RGAL,KC_PSSR,XXXXXXX,
+     XXXXXXX,KC_EQSL,KC_MIAL,KC_BSGL,KC_QUCL,KC_GRV ,                                      KC_LEFT,KC_DOCR,KC_UPGR,KC_RGAL,KC_RSFT,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┬───────┐     ┌───────┬───────┼───────┼───────┼───────┼───────┼───────┼───────┤
      XXXXXXX,KC_LBRC,KC_CUT ,KC_COPY,KC_PSTE,KC_RBRC,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,XXXXXXX,XXXXXXX,
   //└───────┴───────┴───────┼───────┼───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────┼───────┼───────┴───────┴───────┘
@@ -90,7 +90,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├───────┼───────┼───────┼───────┼───────┼───────┤                                     ├───────┼───────┼───────┼───────┼───────┼───────┤
      XXXXXXX,KC_LSFT,KC_LALT,KC_LGUI,KC_LCTL,XXXXXXX,                                      XXXXXXX,KC_RCTL,KC_RGUI,KC_LALT,KC_RSFT,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┬───────┐     ┌───────┬───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     XXXXXXX,XXXXXXX,XXXXXXX,KC_VOLD,KC_VOLU,XXXXXXX,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,XXXXXXX,KC_BRID,KC_BRIU,XXXXXXX,XXXXXXX,XXXXXXX,
+     XXXXXXX,XXXXXXX,XXXXXXX,KC_VOLD,KC_VOLU,XXXXXXX,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,XXXXXXX,KC_BRID,KC_BRIU,XXXXXXX,KC_PSCR,XXXXXXX,
   //└───────┴───────┴───────┼───────┼───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────┼───────┼───────┴───────┴───────┘
                              XXXXXXX,KC_DEL ,KC_BSPC,KC_SPLE,KC_TALA,      KC_ESLA,KC_ENLE,XXXXXXX,XXXXXXX,XXXXXXX
   //                        └───────┴───────┴───────┴───────┴───────┘     └───────┴───────┴───────┴───────┴───────┘
