@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌───────┬───────┬───────┬───────┬───────┬───────┐                                     ┌───────┬───────┬───────┬───────┬───────┬───────┐
      XXXXXXX,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,                                      KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┤                                     ├───────┼───────┼───────┼───────┼───────┼───────┤
-     XXXXXXX,KC_LSFT,KC_LALT,KC_LGUI,KC_LCTL,XXXXXXX,                                      XXXXXXX,KC_RCTL,KC_RGUI,KC_LALT,KC_RSFT,XXXXXXX,
+     XXXXXXX,KC_LSFT,KC_LALT,KC_LGUI,KC_LCTL,KC_F11 ,                                      KC_F12 ,KC_RCTL,KC_RGUI,KC_LALT,KC_RSFT,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┬───────┐     ┌───────┬───────┼───────┼───────┼───────┼───────┼───────┼───────┤
      XXXXXXX,XXXXXXX,XXXXXXX,KC_VOLD,KC_VOLU,XXXXXXX,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,XXXXXXX,KC_BRID,KC_BRIU,XXXXXXX,KC_PSCR,XXXXXXX,
   //└───────┴───────┴───────┼───────┼───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────┼───────┼───────┴───────┴───────┘
