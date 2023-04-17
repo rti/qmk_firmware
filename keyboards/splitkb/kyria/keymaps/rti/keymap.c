@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├───────┼───────┼───────┼───────┼───────┼───────┤                                     ├───────┼───────┼───────┼───────┼───────┼───────┤
      XXXXXXX,KC_EQSL,KC_MIAL,KC_BSGL,KC_QUCL,KC_GRV ,                                      KC_LEFT,KC_DOCR,KC_UPGR,KC_RGAL,KC_RSFT,XXXXXXX,
   //├───────┼───────┼───────┼───────┼───────┼───────┼───────┬───────┐     ┌───────┬───────┼───────┼───────┼───────┼───────┼───────┼───────┤
-     XXXXXXX,KC_LBRC,KC_CUT ,KC_COPY,KC_PSTE,KC_RBRC,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,XXXXXXX,XXXXXXX,
+     XXXXXXX,KC_LBRC,KC_CUT ,KC_COPY,KC_PSTE,KC_RBRC,XXXXXXX,XXXXXXX,      XXXXXXX,XXXXXXX,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_INS ,XXXXXXX,
   //└───────┴───────┴───────┼───────┼───────┼───────┼───────┼───────┤     ├───────┼───────┼───────┼───────┼───────┼───────┴───────┴───────┘
                              XXXXXXX,KC_DEL ,KC_BSPC,KC_SPLE,KC_TALA,      KC_ESLA,KC_ENLE,XXXXXXX,XXXXXXX,XXXXXXX
   //                        └───────┴───────┴───────┴───────┴───────┘     └───────┴───────┴───────┴───────┴───────┘
