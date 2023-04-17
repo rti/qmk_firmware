@@ -29,6 +29,10 @@
           echo "  $ bear -- qmk compile -kb splitkb/kyria -km rti -j16"
           echo "  $ bear -- qmk compile -kb beekeeb/piantor -km rti -j16"
           echo
+          echo "Flash with:"
+          echo "  $ qmk flash -kb splitkb/kyria -km rti"
+          echo "  $ qmk flash -kb beekeeb/piantor -km rti"
+          echo
         '';
       };
     };
