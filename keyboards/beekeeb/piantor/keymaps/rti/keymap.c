@@ -12,19 +12,7 @@ enum layers {
 };
 
 
-// Shortcut to make keymap more readable
-#define EXT_L   MO(_EXTRA)
-
-#define KC_ALBS LALT_T(KC_BSPC)
-#define KC_CLES LCTL_T(KC_ESC)
-#define KC_GRES RGUI_T(KC_ESC)
-#define KC_CTQU RCTL_T(KC_QUOT)
-#define KC_GLTA LGUI_T(KC_TAB)
-#define KC_CREN RCTL_T(KC_ENT)
-#define KC_CLSP LCTL_T(KC_SPC)
-/* #define KC_BR2D HYPR(KC_9) */
-/* #define KC_BR2U HYPR(KC_0) */
-
+// Shortcuts to make keymap more readable
 #define KC_A_SL LSFT_T(KC_A)
 #define KC_EQSL LSFT_T(KC_EQL)
 #define KC_S_AL LALT_T(KC_S)
@@ -36,7 +24,6 @@ enum layers {
 
 
 #define KC_SNSR RSFT_T(KC_SCLN)
-/* #define KC_PSSR RSFT_T(KC_PSCR) */
 #define KC_L_AL LALT_T(KC_L)
 #define KC_RGAL LALT_T(KC_RGHT)
 #define KC_K_GR RGUI_T(KC_K)
