@@ -25,6 +25,10 @@
           echo
           ${pkgs.figlet}/bin/figlet "QMK dev shell"
           echo
+          echo "Compile with:"
+          echo "  $ bear -- qmk compile -kb splitkb/kyria -km rti -j16"
+          echo "  $ bear -- qmk compile -kb beekeeb/piantor -km rti -j16"
+          echo
         '';
       };
     };
