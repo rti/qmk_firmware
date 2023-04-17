@@ -18,6 +18,7 @@
           qmk
           python3
           gcc-arm-embedded
+          bear
         ];
 
         shellHook = ''
