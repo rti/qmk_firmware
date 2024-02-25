@@ -18,11 +18,6 @@
 *.lst
 *.map
 *.o
-*.a
-*.so
-*.dylib
-*.dll
-*.la
 *.stackdump
 *.sym
 
@@ -34,6 +29,7 @@ quantum/version.h
 *.hex
 *.qmk
 *.uf2
+*.vfw
 
 # DD config at wrong location
 /keyboards/**/keymaps/*/info.json
@@ -112,10 +108,3 @@ user_song_list.h
 compile_commands.json
 .clangd/
 .cache/
-
-# VIA(L) files that don't belong in QMK repo
-via*.json
-/keyboards/**/keymaps/vial/*
-
-# dir env
-.direnv
